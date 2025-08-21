@@ -1,10 +1,10 @@
-export default function LatestNews() {
-  return (
+export default function TopNews() {
+    return(
         <div className="px-4">
-              {/* Title with blue square */}
+                       {/* Title with blue square */}
                 <div className="flex items-center gap-2 font-medium">
                     <div className="w-3 h-3 bg-blue-600"></div>
-                    <div>Latest News</div>
+                    <div>Top News</div>
                 </div>
 
       <div className="my-4"></div>
@@ -47,6 +47,6 @@ export default function LatestNews() {
                     </div>
                     </div>
                 </div>
-    </div>
-  );
+        </div>
+    )
 }
