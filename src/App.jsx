@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import LatestNews from "./components/LatestNews";
 
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <div>
         <Header  />
         <Navbar  />
+        <LatestNews  />
     </div>
 
     
