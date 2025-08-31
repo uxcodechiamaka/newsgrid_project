@@ -47,7 +47,6 @@ export default function Achive() {
   }
 
 
-
   useEffect(() => {
     (async () => {
       await fetchArticle();
