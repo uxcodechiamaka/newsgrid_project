@@ -1,13 +1,15 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import News from "./News";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App() {
-      return(
-        <div>
-          <Header  />
-          <Navbar  />
-          <News  />
-        </div>
-      )
+      import Home from "./Home";
+      import Achive from "./achive";
+
+      export default function App() {
+      return (
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home  />} />
+            <Route path="/achive" element={<Achive  />} />
+          </Routes>
+        </Router>
+);
 }

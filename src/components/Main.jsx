@@ -1,6 +1,16 @@
 import newsphoto from "../assets/newsphoto.png"
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 export default function Main() {
+  const [newsData, setNewsData] = useState("")
+  async function fetchNews(){
+    try{
+      const response = await axios.get('https://api.thenewsapi.com/v1/news/all?api_token=ZY0cf0lvsItot5t3zvBdqON2zrgIQQ0nrB4nEnFk&language=en&limit=3')
+      setNewsData(response.data.data)
+    }
+  }
+
   return (
     <div className="max-w-2xl mx-auto rounded-2xl shadow-md overflow-hidden bg-gray-100 my-6">
       {/* News Image */}

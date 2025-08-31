@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import newsphoto from "./assets/newsphoto.png"; 
+import Header from "./Header";
+import Navbar from "./Navbar";
+import newsphoto from "../assets/newsphoto.png"; 
 
 export default function News() {
   return (
@@ -46,9 +46,9 @@ export default function News() {
 
       {/* Back and Next buttons */}
       <div className="flex justify-between items-center mt-8">
-        <button className="bg-[#0F66b6] text-white px-6 py-2 rounded-md">
+        <a href="/" className="bg-[#0F66b6] text-white px-6 py-2 rounded-md">
           Back
-        </button>
+        </a>
         <button className="bg-[#0F66B6] text-white px-6 py-2 rounded-md shadow hover:bg-">
           Next
         </button>

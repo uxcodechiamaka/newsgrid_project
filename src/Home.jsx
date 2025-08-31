@@ -5,6 +5,7 @@ import TopNews from "./components/TopNews";
 import Main from "./components/Main";
 
 
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -13,8 +14,9 @@ export default function Home() {
         <div className="flex flex-row justify-between">
             <LatestNews  />
             <div className="flex-wrap">
-              <Main  />
-            <Main  />
+              <a href="/achive">
+                <Main  />
+              </a>
             </div>
             <TopNews  />
         </div>
