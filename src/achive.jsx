@@ -31,10 +31,13 @@ export default function Achive() {
     
   }
 
+  const API_KEY = 'ZY0cf0lvsItot5t3zvBdqON2zrgIQQ0nrB4nEnFk'
+  const API_KEY_2 = 'af0DLnLJrDjErkPxB5b4FGS11yOI8SA0aAC9jqGV'
+
   async function fetchArticle() {
     try {
       const response = await axios.get(
-        `https://api.thenewsapi.com/v1/news/uuid/${uuid}?api_token=ZY0cf0lvsItot5t3zvBdqON2zrgIQQ0nrB4nEnFk`
+        `https://api.thenewsapi.com/v1/news/uuid/${uuid}?api_token=${API_KEY_2}`
       );
       setArticle(response.data); // API returns article details
       console.log(article)
@@ -43,9 +46,14 @@ export default function Achive() {
     }
   }
 
+
+
   useEffect(() => {
-    fetchArticle();
+    (async () => {
+      await fetchArticle();
+    })();
   }, [uuid]);
+
   return(
     <div>
       <Header  />

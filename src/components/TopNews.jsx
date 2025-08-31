@@ -10,7 +10,7 @@ export default function TopNews() {
       <div className="my-4"></div>
 
       {/* Scrollable container */}
-      <div className="w-[20rem] h-[70rem] overflow-y-scroll border border-gray-300 rounded-lg p-2">
+      <div className="w-full md:w-[20rem]  border border-gray-300 rounded-lg p-2">
         
         {/* Card 1 */}
         <div className="w-full h-[8rem] border border-gray-400 bg-gray-100 rounded-[8px] shadow-md p-4 mb-4">

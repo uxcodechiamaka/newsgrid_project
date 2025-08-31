@@ -9,14 +9,14 @@ export default function News({categories, title, source, published_at, image_url
         {categories}
       </button>
 
-      <h1 className="text-3xl font-medium">
+      <h1 className="text-xl md:text-3xl font-medium">
         {title}
       </h1>
-      <h1 className="text-3xl font-medium">
+      <h1 className="text-xl md:text-3xl font-medium">
         — {source}
       </h1>
 
-      <p className="text-[20px] py-4">{published_at}</p>
+      <p className="md:text-[20px] text-[16px] py-4">{published_at}</p>
 
       <img
         src={image_url}
